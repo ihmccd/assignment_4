@@ -1,0 +1,8 @@
+<div>Hi it works at least!!!</div>
+<a ui-sref="home">Home</a> &lt; <span>Categories</span>
+<h3>Categories</h3>
+<div ng-repeat="category in categoriesCtrl.categories">
+<a ui-sref='categories.menuitems({shortname: category.short_name})'><span>{{category.name}}</span></a>
+
+</div>
+<ui-view></ui-view>
